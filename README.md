@@ -74,4 +74,5 @@ cat /var/log/fxreload/fxreloadlog
 Now your server will start each day at midday and midnight with log files
 
 
-#thanks to: Tracid(https://github.com/tracid56) for original script
+# thanks to: 
+Tracid  (https://github.com/tracid56) for original script
