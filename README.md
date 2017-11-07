@@ -3,6 +3,14 @@ show how to reboot your server each ... hours or days. This alos creates log fil
 
 #Attention: les syntaxes utilisées sont compatibles Debian 8, je n'ai pas tester sous d'autres distributions Linux.
 
+
+#Requirements
+- crontab: 
+```bash
+sudo apt-get update
+sudo apt-get install cron
+```
+
 # Script
 ```bash
 #!/bin/bash
