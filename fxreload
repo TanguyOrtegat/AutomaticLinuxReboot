@@ -1,0 +1,9 @@
+/var/log/fxreload/fxreloadlog
+{
+        rotate 4
+        weekly
+        missingok
+        notifyempty
+        delaycompress
+        compress
+}
