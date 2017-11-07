@@ -29,12 +29,16 @@ sleep 15
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - End procedure"
 ```
 # Note
+Put the RunServer.sh file in user folder
+
 Change into reload_fxserver.sh:
 - /home/FxServer/fx-server-data/cache  --> your directory of cache
+- /root/RunServer.sh --> YOURCOMPUTERUSER/RunServer.sh
 
 Change into RunFxServer.sh:
 - FXSERVERDATA --> your server data folder
 - FXSERVER --> server folfer
+
 
 the server will launch in a screen to open the screen while it is rebooted go to terminal and type: 'screen -r'
 
