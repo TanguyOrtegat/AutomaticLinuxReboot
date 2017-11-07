@@ -33,7 +33,7 @@ Put the RunServer.sh file in user folder
 
 Change into reload_fxserver.sh:
 - /home/FxServer/fx-server-data/cache  --> your directory of cache
-- /root/RunServer.sh --> YOURCOMPUTERUSER/RunServer.sh
+- /root/RunServer.sh --> YOURVPSUSER/RunServer.sh
 
 Change into RunFxServer.sh:
 - FXSERVERDATA --> your server data folder
