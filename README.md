@@ -53,8 +53,8 @@ To access cromtab enter following command while being in root: 'crontab -e'
 *This example server will reboot at midday (12h) and midnight(00h)*
 
 ```bash
-00 12 * * * /home/FxServer/reload_fxserver.sh >> /var/log/fxreload/fxreloadlog
-00 00 * * * /home/FxServer/reload_fxserver.sh >> /var/log/fxreload/fxreloadlog
+00 12 * * * bash /home/FxServer/reload_fxserver.sh >> /var/log/fxreload/fxreloadlog
+00 00 * * * bash /home/FxServer/reload_fxserver.sh >> /var/log/fxreload/fxreloadlog
 ```
 
 *To see if crontab is registred:* 'crontab -l'
