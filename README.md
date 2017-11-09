@@ -47,6 +47,7 @@ Change into RunFxServer.sh:
 Change into CheckCrashServer.sh:
 - HOST --> your server ip
 - PORT --> your fivem server port
+- /home/FxServer/reload_fxserver.sh --> location where reload_fxserver.sh is located
 
 the server will launch in a screen to open the screen while it is rebooted go to terminal and type: 'screen -r'
 
