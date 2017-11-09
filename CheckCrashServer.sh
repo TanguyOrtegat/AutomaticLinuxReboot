@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#config
-HOST=149.91.81.207
+#config Oasis Island
+HOST=54.36.188.190
 PORT=30120
 
 #script
