@@ -59,9 +59,9 @@ To access cromtab enter following command while being in root: 'crontab -e'
 /!\ DO NOT DO less then 1 min otherwise you will start twice your server /!\ 
 
 ```bash
-* * * * * bash /root/CheckCrashServer.sh >> /var/log/fxreload/fxreloadlog
-00 12 * * * bash /home/FxServer/reload_fxserver.sh >> /var/log/fxreload/fxreloadlog
-00 00 * * * bash /home/FxServer/reload_fxserver.sh >> /var/log/fxreload/fxreloadlog
+*/2 * * * * bash /root/CheckCrashServer.sh >> /var/log/fxreload/fxreloadlog
+01 12 * * * bash /home/FxServer/reload_fxserver.sh >> /var/log/fxreload/fxreloadlog
+01 00 * * * bash /home/FxServer/reload_fxserver.sh >> /var/log/fxreload/fxreloadlog
 ```
 
 *To see if crontab is registred:* 'crontab -l'
