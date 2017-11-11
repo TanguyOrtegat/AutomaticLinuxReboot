@@ -57,7 +57,7 @@ the server will launch in a screen to open the screen while it is rebooted go to
 # Adding automatic reboot
 To access cromtab enter following command while being in root: 'crontab -e'
 
-*This example server will reboot at midday (12h) and midnight(00h) and checks if server cashs every minute*
+*This example server will reboot at midday (12h01) and midnight(00h01) and checks if server cashs every minute*
 
 /!\ DO NOT DO less then 1 min otherwise you will start twice your server /!\ 
 
