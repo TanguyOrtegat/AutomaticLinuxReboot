@@ -49,6 +49,9 @@ Change into CheckCrashServer.sh:
 - PORT --> your fivem server port
 - /home/FxServer/reload_fxserver.sh --> location where reload_fxserver.sh is located
 
+Set the folder into your resource folder if you want to warn your server when it's going to reboot.
+Just edit the timing and texts to your liking
+
 the server will launch in a screen to open the screen while it is rebooted go to terminal and type: 'screen -r'
 
 # Adding automatic reboot
