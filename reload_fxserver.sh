@@ -12,6 +12,6 @@ echo `date '+%d-%B-%Y_%H:%M:%S'` " - Emptying cache..."
 rm -R /home/GTA5ESXTEST/fx-server-data/cache
 sleep 5
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - Starting server..."
-screen -d -m bash /root/RunServerESXTEST.sh
+screen -L -d -m bash /root/RunServerESXTEST.sh
 sleep 15
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - End procedure"
