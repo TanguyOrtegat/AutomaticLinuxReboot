@@ -27,7 +27,7 @@ echo `date '+%d-%B-%Y_%H:%M:%S'` " - Emptying cache..."
 rm -R /home/FxServer/fx-server-data/cache
 sleep 5
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - Starting server..."
-screen -d -m bash /root/RunServer.sh
+screen -L -d -m bash /root/RunServer.sh
 
 sleep 15
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - End procedure"
@@ -82,7 +82,8 @@ Copy and paste fxreload into /etc/logrotate.d/  directory
 
 # To see your log files:
 ```
-cat /var/log/fxreload/fxreloadlog
+cat /var/log/fxreload/fxreloadlog     --> for reboot logs
+cat screenlog.0    -->for server ingame and rcon logs
 ```
 
 # Conclusion
