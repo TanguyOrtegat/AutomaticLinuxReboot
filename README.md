@@ -27,7 +27,7 @@ echo `date '+%d-%B-%Y_%H:%M:%S'` " - Emptying cache..."
 rm -R /home/FxServer/fx-server-data/cache
 sleep 5
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - Starting server..."
-screen -L -d -m bash /root/RunServer.sh
+screen -L ServerLog/`date '+%Y-%m-%d_%H:%M:%S'` -d -m bash /root/RunServer.sh
 
 sleep 15
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - End procedure"
@@ -75,6 +75,9 @@ While being in root entrer following commands:.
 mkdir /var/log/fxreload
 chown -R root:root /var/log/fxreload/        (change root to your computer user)
 ```
+```
+mkdir ServerLog
+```
 
 Copy and paste fxreload into /etc/logrotate.d/  directory
 
@@ -83,8 +86,8 @@ Copy and paste fxreload into /etc/logrotate.d/  directory
 # To see your log files:
 ```
 cat /var/log/fxreload/fxreloadlog     --> for reboot logs
-cat screenlog.0    -->for server ingame and rcon logs
 ```
+Go to the folder /USERNAME/ServerLog  in that folder you will have all logs of your server  (change USERNAME to username of your computer)
 
 # Conclusion
 Now your server will start each day at midday and midnight with log files
