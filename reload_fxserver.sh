@@ -1,17 +1,14 @@
 #!/bin/bash
 echo "***********************************************************"
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - Starting procedure..."
-sleep 2
-echo `date '+%d-%B-%Y_%H:%M:%S'` " - Stopping server..."
-pkill screen
-sleep 10
-echo `date '+%d-%B-%Y_%H:%M:%S'`" - Restart mysql service..."
-sudo service mysql restart
-sleep 10
+sleep 1
+echo `date '+%d-%B-%Y_%H:%M:%S'` " - killing screen game server..."
+screen -X -S "Game Server" kill
+sleep 1
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - Emptying cache..."
-rm -R /home/GTA5ESXTEST/fx-server-data/cache
+rm -R /home/fairyV3/fx-server-data/cache
 sleep 5
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - Starting server..."
-screen -L ServerLog/`date '+%Y-%m-%d_%H:%M:%S'` -d -m bash /root/RunServer.sh
+screen -S "Game Server" -L ServerLog/`date '+%Y-%m-%d_%H:%M:%S'.txt` -d -m bash /root/RunServerFairyV.sh
 sleep 15
 echo `date '+%d-%B-%Y_%H:%M:%S'` " - End procedure"
